@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B715A71-9FFE-401A-8537-01FED227500A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>proyecto</RootNamespace>
+    <AssemblyName>proyecto</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Henry D\Downloads\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0C17D376DF7353A83FFF8EA77D4E58433EF7FDE3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>proyecto_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ibooks-app-icon_27198 %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v14.1.Drawing, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPdfViewer.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Otros\Loader2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otros\Loader2.Designer.cs">
+      <DependentUpon>Loader2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otros\Abecedario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otros\Abecedario.Designer.cs">
+      <DependentUpon>Abecedario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\ANIMALES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\ANIMALES.Designer.cs">
+      <DependentUpon>ANIMALES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\COLORES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\COLORES.Designer.cs">
+      <DependentUpon>COLORES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\Comidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\Comidas.Designer.cs">
+      <DependentUpon>Comidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\DaysAndMonths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\DaysAndMonths.Designer.cs">
+      <DependentUpon>DaysAndMonths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\Familia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\Familia.Designer.cs">
+      <DependentUpon>Familia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprende Matematica\Dividir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprende Matematica\Dividir.Designer.cs">
+      <DependentUpon>Dividir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otros\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otros\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otros\Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otros\Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\Formas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\Formas.Designer.cs">
+      <DependentUpon>Formas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otros\Ingles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otros\Ingles.Designer.cs">
+      <DependentUpon>Ingles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otros\Matemáticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otros\Matemáticas.Designer.cs">
+      <DependentUpon>Matemáticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\Numbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\Numbers.Designer.cs">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\PartesCuerpo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\PartesCuerpo.Designer.cs">
+      <DependentUpon>PartesCuerpo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\Pronombres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\Pronombres.Designer.cs">
+      <DependentUpon>Pronombres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprende Matematica\Multiplicar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprende Matematica\Multiplicar.Designer.cs">
+      <DependentUpon>Multiplicar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otros\pdf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otros\pdf.Designer.cs">
+      <DependentUpon>pdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\Ropa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\Ropa.Designer.cs">
+      <DependentUpon>Ropa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\Saludos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\Saludos.Designer.cs">
+      <DependentUpon>Saludos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprende Matematica\Restar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprende Matematica\Restar.Designer.cs">
+      <DependentUpon>Restar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprende Matematica\Sumar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprende Matematica\Sumar.Designer.cs">
+      <DependentUpon>Sumar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otros\Tablas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otros\Tablas.Designer.cs">
+      <DependentUpon>Tablas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Loader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Loader.Designer.cs">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\TestIngles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\TestIngles.Designer.cs">
+      <DependentUpon>TestIngles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\TestMatematicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tests\TestMatematicas.Designer.cs">
+      <DependentUpon>TestMatematicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aprender ingles\Verbos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprender ingles\Verbos.Designer.cs">
+      <DependentUpon>Verbos.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Otros\Loader2.resx">
+      <DependentUpon>Loader2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otros\Abecedario.resx">
+      <DependentUpon>Abecedario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\ANIMALES.resx">
+      <DependentUpon>ANIMALES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\Numbers.resx">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\COLORES.resx">
+      <DependentUpon>COLORES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\Comidas.resx">
+      <DependentUpon>Comidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\DaysAndMonths.resx">
+      <DependentUpon>DaysAndMonths.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\Familia.resx">
+      <DependentUpon>Familia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprende Matematica\Dividir.resx">
+      <DependentUpon>Dividir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otros\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otros\Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\Formas.resx">
+      <DependentUpon>Formas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otros\Ingles.resx">
+      <DependentUpon>Ingles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otros\Matemáticas.resx">
+      <DependentUpon>Matemáticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\PartesCuerpo.resx">
+      <DependentUpon>PartesCuerpo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\Pronombres.resx">
+      <DependentUpon>Pronombres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprende Matematica\Multiplicar.resx">
+      <DependentUpon>Multiplicar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otros\pdf.resx">
+      <DependentUpon>pdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\Ropa.resx">
+      <DependentUpon>Ropa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\Saludos.resx">
+      <DependentUpon>Saludos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprende Matematica\Restar.resx">
+      <DependentUpon>Restar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprende Matematica\Sumar.resx">
+      <DependentUpon>Sumar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otros\Tablas.resx">
+      <DependentUpon>Tablas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Loader.resx">
+      <DependentUpon>Loader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\TestIngles.resx">
+      <DependentUpon>TestIngles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tests\TestMatematicas.resx">
+      <DependentUpon>TestMatematicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprender ingles\Verbos.resx">
+      <DependentUpon>Verbos.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="proyecto_ClaveTemporal.pfx" />
+    <None Include="Resources\BACGROUND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\050_award_cup_winner-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\050_award_cup_winner-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\050_award_cup_winner-5122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACGROUND1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACGROUND2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\050_award_cup_winner-5123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ingles-para-niños.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ingles-para-niños1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abecedario-español-animales-imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tablas-de-multiplicar-para-aprender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vocales.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntaverde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntaverde1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntaverde2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntakjknk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntakjknk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puntaverde3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\djflksdjf%3bk%3b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ñ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numeros-1-a-9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Art_Lessons-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coleccion-numeros-dibujos-animados-personajes_23-2147806574.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1557985d8ccb3f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personajes-figuras-geometricas-dibujos-animados_11460-548.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ropa-animada-png-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dibujos-animados-chicos-lindos-saludo-vector_39961-493.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71022421-stock-vector-illustration-of-vocabulary-part-of-body.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agenda-y-calendario-imagen-animada-0009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ilustracion-vector-dibujos-animados-familia-feliz_43633-3479.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen_1_1507593082.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abe180a67ef3dcd01127947cf71c681e-alimentos-frutas-y-verduras-vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d17e0f7e8013f791a8181a77cf624170.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIMBOLO-MAS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-obelus-division-plus-and-minus-signs-symbol-dividing-clipart-5adbadb9942ee7.532220971524346297607.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-division-subtraction-sign-mathematics-obelus-negative-money-cliparts-5a762f03039129.3712697915176947230146.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-division-subtraction-sign-mathematics-obelus-negative-money-cliparts-5a762f03039129.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-division-subtraction-sign-mathematics-obelus-negative-money-cliparts-5a762f030391291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-obelus-division-plus-and-minus-signs-symbol-dividing-clipart-5adbadb9942ee7.5322209715243462976071.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIMBOLO-MAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIMBOLO-MAS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ibooks-app-icon_27198 %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.XtraBars.v14.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraBars.v14.1.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
